@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="bdd_lpdc" match-name="_possede"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="commande"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="commande_contient"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="etat_commande"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="fabrique"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="menu"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="menu_contient"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="panier"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="panier_contient"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="plat"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="produit"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="traiteur"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="type_contenant"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="type_cuisine"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="type_livraison"/>
+  <table-filter match-catalog="bdd_lpdc" match-name="user"/>
+</hibernate-reverse-engineering>

@@ -1,0 +1,514 @@
+html,
+body{
+	padding: 0; margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+	font-size: 18px;
+	background: #f7f7f7;
+}
+
+header{
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	border-bottom: 5px solid #ae895d;
+}
+header nav .logo{
+	float: left;
+	margin: 15px 40px;
+}
+header nav > ul{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 20px;
+	list-style: none;
+	padding: 0; margin: 0;
+}
+header nav > ul > a{
+	color: #ae895d;
+	padding-bottom: 5px;
+	transition: .2s ease-in-out;
+	-webkit-transition: .2s ease-in-out;
+	-moz-transition: .2s ease-in-out;
+	-o-transition: .2s ease-in-out;
+}
+header nav > ul > a:hover{
+	color: #8c6d48;
+}
+header nav > ul > a > li{
+	display: inline-block;
+	padding: 6px 18px;
+	font-size: 16px;
+}
+header nav > ul > a > li > img{
+	width: 30px;
+}
+.login-form{
+	position: absolute;
+	z-index: 100;
+	right: 35px;
+	top: 135px;
+	background: #ae895d;
+	padding: 10px 20px;
+}
+.login-form label{
+	display: block;
+	font-size: 9px;
+	text-transform: uppercase;
+}
+.login-form .login-form-group{
+	display: inline-block;
+}
+.login-form input{
+	font-size: 14px;
+	padding: 3px 8px;
+}
+.login-form button.btn-login{
+	display: inline-block;
+	background: #2d2d2d;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	padding: 5px 15px;
+}
+.user-logged-in{
+	position: absolute;
+	top: 3px; right: 30px;
+	font-size: 14px;
+}
+section{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+section#header > .jumbotron{
+	background: url('../images/jumbo.jpg') no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 350px;
+}
+section#header > .hero{
+	position: absolute;
+	top: 45%;
+	-webkit-transform: translateY(-45%);
+	-ms-transform: translateY(-45%);
+	transform: translateY(-45%);
+	left: 10%; right: 0; bottom: 0;
+	box-sizing: border-box;
+	padding: 20px;
+	color: #fff;
+}
+section#header > .hero h2{
+	font-size: 42px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+section#header > .hero p{
+	width: 50%;
+	font-size: 16px;
+	font-weight: lighter;
+	padding-left: 5px;
+}
+section#header > .hero a.btn-hero{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid #fff;
+	background: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin: 10px;
+	width: 100px;
+	text-align: center;
+}
+
+
+section#quote{
+	width: 100%;
+	padding: 20px;
+	background: #fff;
+	text-align: center;
+}
+section#quote > .container{
+	width: 80%;
+	margin: 15px auto;
+}
+section#quote > .container > h3{
+	font-weight: lighter;
+	color: rgb(85,85,85);
+}
+
+section.container{
+	width: 80%;
+	margin: 15px auto;
+	overflow: hidden;
+}
+section.container > .product-list .product{
+	position: relative;
+	width: 31%;
+	margin: 1%;
+	float: left;
+	box-shadow: 0px 0px 8px rgba(85,85,85,0.3);
+}
+section.container > .product-list .product > .product-image{
+	background-size: cover;
+	width: 100%;
+	min-height: 250px;
+	box-shadow: 0px 2px 8px rgba(85,85,85,0.3);
+}
+section.container > .product-list .product > .product-name{
+	font-family: 'Sacramento', serif;
+	font-size: 26px;
+	text-align: center;
+	padding: 10px;
+}
+section.container > .product-list .product > .product-price{
+	z-index: 10;
+	position: absolute;
+	right: -12px;
+	top: 0;
+}
+section.container > .product-list .product > .product-price > div{
+	position: absolute;
+	color: #fff;
+	width: 77px;
+	text-align: center;
+	top: 30px; right: -10px;
+	text-shadow: 0px 0px 6px rgba(85,85,85,0.6);
+}
+section.container > .product-list .product .add-to-cart{
+	opacity: 0;
+	position: absolute;
+	top: 0; right: 0; left: 0;
+	min-height: 250px;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	transition: .2s ease-in-out;
+	-webkit-transition: .2s ease-in-out;
+	-moz-transition: .2s ease-in-out;
+	-o-transition: .2s ease-in-out;
+}
+section.container > .product-list .product .add-to-cart button{
+	position: absolute;
+	width: 80px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 0; left: 0;
+	margin: auto;
+	background: none;
+	border: none;
+}
+section.container > .product-list .product .add-to-cart button:focus{
+	outline: none;
+}
+section.container > .product-list .product:hover .add-to-cart{
+	opacity: 1;
+}
+section.container > .product-list .product .add-to-cart .quantite{
+	position: absolute;
+	top: 70%;
+	-webkit-transform: translateY(-70%);
+	-ms-transform: translateY(-70%);
+	transform: translateY(-70%);
+	left: 0; right: 0;
+	margin: auto;
+}
+section.container > .product-list .product .add-to-cart .quantite div{
+	color: #fff;
+	display: inline-block;
+}
+section.container > .product-list .product .add-to-cart .quantite .number{
+	padding: 0 10px;
+}
+section.container > .product-list .product .add-to-cart .quantite .remove a,
+section.container > .product-list .product .add-to-cart .quantite .add a{
+	font-size: 20px;
+	color: #aecd53;
+	text-decoration: none;
+}
+
+section.container > .product-infos{
+	overflow: hidden;
+	margin: 20px 0;
+}
+section.container > .product-infos .product-image{
+	position: relative;
+	float: left;
+	margin: 0 20px;
+	background-size: cover;
+	width: 250px;
+	min-height: 250px;
+	box-shadow: 0px 0px 8px rgba(85,85,85,0.3);
+}
+section.container > .product-infos .product-image .product-price{
+	position: absolute;
+	right: -12px;
+}
+section.container > .product-infos .product-image .product-price div{
+	position: absolute;
+	color: #fff;
+	width: 77px;
+	text-align: center;
+	top: 30px; right: -10px;
+	text-shadow: 0px 0px 6px rgba(85,85,85,0.6);
+}
+section.container > .product-infos h2{
+	margin: 0;
+}
+section.container > .product-infos .type-cuisine{
+	color: #aecd53;
+}
+section.container > .product-infos .nb-personnes,
+section.container > .product-infos .plat-chaud{
+	display: block;
+	font-size: 14px;
+	color: #4b4b4b;
+}
+section.container > .product-infos .add-to-cart button{
+	background: #a0c345;
+	border: none;
+	margin: 10px 0;
+	padding: 8px 16px;
+	font-size: 14px;
+	color: #fff;
+}
+section.container > .product-infos .quantite{
+	
+}
+section.container > .product-infos .quantite div{
+	color: #2C2C2C;
+	display: inline-block;
+}
+section.container > .product-infos .quantite .number{
+	padding: 0 10px;
+}
+section.container > .product-infos .quantite .remove a,
+section.container > .product-infos .quantite .add a{
+	font-size: 20px;
+	color: #aecd53;
+	text-decoration: none;
+}
+section.container > .product-infos .add-to-cart .quantite div{
+	float: left;
+}
+
+
+section.container > .cart-list{
+	border: 1px solid #d6d4d4;
+	width: 100%;
+}
+section.container > .cart-list thead{
+	background: #f6f6f6;
+}
+section.container > .cart-list td,
+section.container > .cart-list th{
+	border: 1px solid #d6d4d4;
+	padding: 7px 8px 9px 8px;
+}
+
+section.container > .cart-list .product-image{
+	background-size: cover;
+	width: 80px;
+	min-height: 80px;
+	margin: auto;
+}
+section.container > .cart-list .product-description span{
+	font-size: 14px;
+	color: #2C2C2C;
+}
+section.container > .cart-list .quantite{
+	
+}
+section.container > .cart-list .quantite div{
+	color: #2C2C2C;
+	display: inline-block;
+}
+section.container > .cart-list .quantite .number{
+	padding: 0 10px;
+}
+section.container > .cart-list .quantite .remove a,
+section.container > .cart-list .quantite .add a{
+	font-size: 20px;
+	color: #aecd53;
+	text-decoration: none;
+}
+
+section.container > .registration{
+	width: 280px;
+	margin: auto;
+}
+section.container > .registration h1{
+	text-align: center;
+	margin: 0;
+}
+section.container > .registration em{
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 20px;
+	color: #2C2C2C;
+}
+section.container > .registration label{
+	display: block;
+	margin-top: 5px;
+	font-size: 9px;
+	text-transform: uppercase;
+}
+section.container > .registration input[type="text"],
+section.container > .registration input[type="password"],
+section.container > .registration input[type="email"]{
+	padding: 6px 12px;
+	display: block;
+	font-size: 14px;
+}
+section.container > .registration .btn-register{
+	background: #a0c345;
+	border: none;
+	margin: 10px 0;
+	padding: 8px 16px;
+	font-size: 14px;
+	color: #fff;
+}
+section.container > .registration .btn-reset{
+	background: none;
+	border: none;
+	font-size: 14px;
+	color: #337ab7;
+	text-decoration: none;
+}
+
+section.container > .sidebar{
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+}
+section.container > .sidebar input[type="submit"]{
+	background: #a0c345;
+	border: none;
+	margin: 10px 0;
+	padding: 8px 16px;
+	font-size: 14px;
+	color: #fff;
+}
+section.container > .catalogue-list{
+	margin-left: 320px;
+}
+section.container > .catalogue-list .product{
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #efefef;
+	margin-top: 20px;
+}
+section.container > .catalogue-list .product:last-child{
+	border: none;
+}
+section.container > .catalogue-list .product-image{
+	width: 100px;
+	min-height: 100px;
+	background-size: cover;
+	float: left;
+	margin-right: 20px;
+}
+section.container > .catalogue-list .product-price img{
+	display: none;
+}
+section.container > .catalogue-list .add-to-cart{
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+section.container > .catalogue-list .add-to-cart button{
+	background: #a0c345;
+	border: none;
+	margin: 10px 0;
+	padding: 8px 16px;
+	font-size: 14px;
+	color: #fff;
+}
+section.container > .catalogue-list .quantite{
+	left: -70px;
+	top: 15px;
+	position: absolute;
+}
+section.container > .catalogue-list .quantite div{
+	color: #2C2C2C;
+	display: inline-block;
+}
+section.container > .catalogue-list .quantite .number{
+	padding: 0 10px;
+}
+section.container > .catalogue-list .quantite .remove a,
+section.container > .catalogue-list .quantite .add a{
+	font-size: 20px;
+	color: #aecd53;
+	text-decoration: none;
+}
+section.container > .catalogue-list .add-to-cart .quantite div{
+	float: left;
+}
+section.container > .catalogue-list .product-description{
+	font-size: 14px;
+	font-style: italic;
+	color: #2C2C2C;
+	width: 450px;
+}
+section.container > .catalogue-list .product-price{
+	margin-top: 10px;
+}
+
+section.container > .traiteurs-list .traiteur{
+	padding-bottom: 20px;
+	margin-top: 20px;
+	border-bottom: 1px solid #efefef;
+}
+section.container > .traiteurs-list .traiteur:last-child{
+	border: none;
+}
+section.container > .traiteurs-list .traiteur-image{
+	float: left;
+	margin-right: 20px;
+	width: 100px;
+	min-height: 100px;
+	background-size: cover;
+}
+section.container > .traiteurs-list .traiteur-name{
+	padding-top: 10px;
+}
+section.container > .traiteurs-list .traiteur-name a{
+	font-size: 20px;
+	color: #aecd53;
+	text-decoration: none;
+}
+section.container > .traiteurs-list .traiteur-address,
+section.container > .traiteurs-list .traiteur-telephone{
+	font-size: 14px;
+	color: #2C2C2C;
+}
+
+.remove-item-cart{
+	background: none;
+	border: none;
+}
+.remove-item-cart:focus{
+	outline: none;
+}
+
+footer{
+	background: #272727;
+	color: #fff;
+	border-top: 5px solid #ae895d;
+	width: 100%;
+	padding: 20px;
+	font-size: 16px;
+}
